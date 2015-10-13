@@ -22,8 +22,8 @@
   <div class="associations">
     <%= f.fields_for :grade_thresholds do |ff| %>
       <div class="association container">
-        <div class="row">
-          <div class="span3">
+          <div class.="row">
+            <div class="span3">
             <%= ff.label :letter do %>
               <strong class="large-field-label">Letter</strong> <%= ff.text_field :letter, class: "input-small" %>
             <% end %>
@@ -54,4 +54,7 @@
     <!-- totally extrapolated from: http://stackoverflow.com/a/21812975 -->
 
   </div>
+  <script>
+  document.getElementsByClassName("association container")[4].style.display="none";
+</script>
 <% end %>

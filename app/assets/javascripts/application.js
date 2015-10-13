@@ -14,5 +14,13 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
-document.getElementsByName("commit")
-document.getElementsByClassName("row")
+document.getElementsByName("commit");
+
+// document.getElementsByClassName("associations")[0].lastElementChild.style.display = 'none';
+
+// function hideLastEl() {
+// var length = document.getElementsByClassName("row").length;
+// var lastElement = document.getElementsByClassName("row")[length-1];
+// lastElement.style.display = "none";
+// }
+document.getElementsByClassName("association container")[4].style.display="none";
