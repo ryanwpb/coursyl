@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+document.getElementsByName("commit")
+document.getElementsByClassName("row")

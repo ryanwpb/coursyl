@@ -34,7 +34,7 @@
             <% end %>
           </div>
           <div class="span1">
-            <% if ff.object.persisted? %>
+            <% if ff.object.persisted?  %>
               <%= link_to 'Delete', nil, class: "btn btn-danger delete-association" %>
               <%= ff.check_box :_destroy, class: "destroy", hidden: true %>
             <% else %>
@@ -50,6 +50,8 @@
 
 
   <div class="actions">
-    <%= f.submit class: "btn" %>
+    <%= f.submit class: "btn", data: { disable_with: "Course Updating..." } %>
+    <!-- totally extrapolated from: http://stackoverflow.com/a/21812975 -->
+
   </div>
 <% end %>
