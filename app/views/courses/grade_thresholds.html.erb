@@ -46,7 +46,7 @@
       <% i += 1 %>
     <% end %>
   </div>
-  <%= link_to '<i class="fa fa-plus"></i> Add Grade Threshold'.html_safe, nil, class: "btn btn-success new-association", "data-index" => i %>
+  <%= link_to '<i class="fa fa-plus"></i> Add Grade Threshold'.html_safe, "javascript:void(0)", class: "btn btn-success new-association", id: "add_grade", "data-index" => i %>
 
 
   <div class="actions">
@@ -54,7 +54,6 @@
     <!-- totally extrapolated from: http://stackoverflow.com/a/21812975 -->
 
   </div>
-  <script>
-  document.getElementsByClassName("association container")[4].style.display="none";
-</script>
+
+
 <% end %>

@@ -12,6 +12,7 @@
  *= require font-awesome
  *= require_tree .
  */
+ @import "bootstrap";
 
 body {
   padding-top: 60px;
@@ -137,4 +138,3 @@ td.text-right, th.text-right {
 .bold {
   font-weight: bold;
 }
-

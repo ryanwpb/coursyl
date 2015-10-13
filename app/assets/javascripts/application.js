@@ -14,13 +14,52 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
-document.getElementsByName("commit");
+// function updateCourse(button) {
+//   var =   data: { disable_with: "Course Updating..." }
+// }
 
-// document.getElementsByClassName("associations")[0].lastElementChild.style.display = 'none';
+
 
 // function hideLastEl() {
 // var length = document.getElementsByClassName("row").length;
 // var lastElement = document.getElementsByClassName("row")[length-1];
 // lastElement.style.display = "none";
 // }
-document.getElementsByClassName("association container")[4].style.display="none";
+function upDateCourse() {
+  $('.btn').last().attr("disable",true)
+}
+$( upDateCourse);
+
+function hidelastrow() {
+  $('.association.container').last().hide()
+}
+
+$(hidelastrow);
+function showLastRow() {
+  $('#add_grade').click(function(){
+      $('.association.container').last().show()
+  })
+}
+$(showLastRow);
+
+// When a Delete button is clicked, hide the row to which it belongs, but mark the hidden _destroy field in that row as truthy.
+function hideDeleteRow(){
+  $(event.target).closest(".association.container").hide();
+  $(event.target).siblings().last().prop("checked", true);
+}
+function clickAndDelete() {
+  $(".btn-danger").on("click", hideDeleteRow);
+}
+$(clickAndDelete);
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+Add Comment Click to expand inline 
