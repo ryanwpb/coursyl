@@ -12,7 +12,7 @@ Coursyl is a Rails app originally developed to manage <b>cour</b>se <b>syl</b>la
 * Visual, topic-based trees
 * Class meeting management
 * Student feedback
-* Achievement-based grading
+* Achievement-based grading.
 
 It's true that there are hundreds of course management software packages out there, so it may not be for you.  However, it's written by teachers, used by teachers, and being iteratively developed, so it might have something that you like.  Feel free to use it!
 
