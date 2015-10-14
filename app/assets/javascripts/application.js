@@ -67,9 +67,10 @@ $(function() {
 
 
 function topModal() {
-  $('#super_modal').modal('show')
-}
+  $('#super_modal').modal('show');
+  $('#super_modal .modal-header').show();
+};
 
 $(function(){
-  $(".fa.fa-calendar").on("click", topModal)
+  $(".fa.fa-calendar").on("click", topModal);
 });

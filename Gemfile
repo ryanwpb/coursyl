@@ -34,7 +34,6 @@ gem 'rails-reveal-js'
 gem 'font-awesome-rails'
 
 gem 'devise'
-gem 'bootstrap-sass', '~> 3.3.5'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

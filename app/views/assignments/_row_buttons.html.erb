@@ -15,7 +15,8 @@
       <%= link_to '<i class="fa fa-legal" title="Grade Assignment"></i>'.html_safe, grade_matrix_assignment_path(assignment) %>
     <% end %>
     <%= link_to '<i class="fa fa-bar-chart-o" title="View Grades"></i>'.html_safe, view_grades_assignment_path(assignment) %>
-    <%= link_to '<i class="fa fa-calendar" title="Change Date"></i>'.html_safe, "#" %>
+    <%= link_to '<i class="fa fa-calendar" title="Change Date"></i>'.html_safe, "#super_modal",
+          role: "button", data: {toggle: "modal"} %>
     <div id="super_modal" class="modal hide fade">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
